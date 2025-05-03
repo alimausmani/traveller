@@ -30,10 +30,10 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-white shadow">
-                <div className="max-w-7xl mx-auto flex flex-wrap md:flex-nowrap items-center justify-between px-4 py-3">
+            <div className="bg-white shadow ">
+                <div className="max-w-7xl mx-auto flex flex-wrap md:flex-nowrap items-center justify-between px-4 py-3 ">
 
-                    <div className="flex items-center mb-2 md:mb-0">
+                    <div className="flex items-center mb-2 md:mb-0 ">
                         <div className="w-[6ch] md:w-[10ch]"></div>
                         <img
                             src="https://www.specialholidays.com/world/uploads/global/logo.png"
