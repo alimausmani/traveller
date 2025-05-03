@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="bg-black text-white py-10 px-5 rounded-t-3xl">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
                 <div>
-                    <h3 className="font-bold text-lg mb-4">CONTACT</h3>
+                    <h3 className="font-bold text-lg mb-4">CONTACT Us</h3>
                     <p className="flex items-center gap-2"><FaMapMarkerAlt /> 1600 Pennsylvania Ave, 20003 DC</p>
                     <p className="flex items-center gap-2"><FaPhone /> +1 888-888-8888</p>
                     <p className="flex items-center gap-2"><FaEnvelope /> demo@gmail.com</p>
