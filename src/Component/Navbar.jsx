@@ -39,7 +39,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center w-full sm:px-4 md:px-24">
                     <div className={`${menuOpen ? 'hidden' : 'block'} sm:block`}>
                         <h1 className="text-xl sm:text-2xl font-bold text-blue-800 flex items-center gap-2">
-                            Trevily
+                            TREVILY
                         </h1>
                     </div>
                     <button

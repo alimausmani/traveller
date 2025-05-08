@@ -8,16 +8,7 @@ const TravelBanner = () => {
   const videoIntervalRef = useRef(null);
 
   const stateVideos = [
-    { name: 'Himachal Pradesh', src: '/himachal.mp4' },
-    { name: 'Delhi', src: '/delhi.mp4' },
-    { name: 'Mumbai', src: '/mumbai.mp4' },
-    { name: 'Kolkata', src: '/kolkata.mp4' },
-    { name: 'Rajasthan', src: '/rajashatan image.mp4' },
-    { name: 'Gujrat', src: '/gujrat.mp4' },
-    { name: 'Kerala', src: '/kerela.mp4' },
-    { name: 'Assam', src: '/assam.mp4' },
-    { name: 'Goa', src: '/goa.mp4' },
-    { name: 'Sikkim', src: '/sikkim.mp4' },
+    { name: 'INDIA', src: '/allOne.mp4' },
   ];
 
   const headingLines = [
@@ -139,5 +130,20 @@ const TravelBanner = () => {
 };
 
 export default TravelBanner;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
