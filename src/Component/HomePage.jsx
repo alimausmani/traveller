@@ -1,9 +1,11 @@
+import VideoCode from "./videoCode";
 import TravelBanner from './TravelBanner';
 import Plan from "./Plan";
 import { MapPin } from "lucide-react";
 import { useState } from "react";
 import Testimonials from './Testimonials';
 import React from 'react';
+
 
 
 const HomePage = () => {
@@ -62,6 +64,7 @@ const HomePage = () => {
 
   return (
     <>
+      <VideoCode/>
       <TravelBanner />
       <Plan />
 

@@ -1,150 +1,49 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
+import backgroundImage from '../assets/images/mountain.avif';
+import girlImage from '../assets/images/girl.jpg';
 
 const TravelBanner = () => {
-  const videoRefs = useRef([]);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [headingIndex, setHeadingIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-  const videoIntervalRef = useRef(null);
-
-  const stateVideos = [
-    { name: 'INDIA', src: '/allOne.mp4' },
-  ];
-
-  const headingLines = [
-    "It's Time To Travel India",
-    "It's Time To Adventure India",
-    "It's Time To Experience India",
-    "It's Time To Discover India",
-  ];
-  
-  useEffect(() => {
-    if (!isPaused) {
-      videoIntervalRef.current = setInterval(() => {
-        setActiveIndex((prevIndex) => (prevIndex + 1) % stateVideos.length);
-      }, 4000);
-    }
-    return () => clearInterval(videoIntervalRef.current);
-  }, [isPaused]);
-
-  useEffect(() => {
-    videoRefs.current.forEach((video, index) => {
-      if (video) {
-        if (index === activeIndex) {
-          video.currentTime = 0;
-          video.play();
-        } else {
-          video.pause();
-        }
-      }
-    });
-  }, [activeIndex]);
-
-  useEffect(() => {
-    const headingInterval = setInterval(() => {
-      setHeadingIndex((prev) => (prev + 1) % headingLines.length);
-    }, 3000);
-    return () => clearInterval(headingInterval);
-  }, []);
-
-  const handlePrev = () => {
-    setActiveIndex((prev) => (prev - 1 + stateVideos.length) % stateVideos.length);
-  };
-
-  const handleNext = () => {
-    setActiveIndex((prev) => (prev + 1) % stateVideos.length);
-  };
-
   return (
-    <div className="relative max-w-6xl mx-auto mt-10 rounded-2xl overflow-hidden shadow-xl border border-gray-300 h-[500px]">
+    <div
+      className="relative w-full h-auto lg:h-[800px] bg-gradient-to-br from-blue-600 to-blue-900 text-black overflow-hidden"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      {/* Flex container for responsiveness */}
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full h-full pt-10 lg:pt-0 lg:absolute lg:top-0">
 
-      <button
-        onClick={handlePrev}
-        className="absolute z-40 left-4 top-1/2 transform -translate-y-1/2 bg-transparent text-white text-3xl px-3 py-1 rounded-full hover:bg-black/70"
-      >
-        &#8249;
-      </button>
+        {/* Magnifier Circle */}
+        <div className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[300px] lg:h-[300px] rounded-full border-[8px] sm:border-[10px] lg:border-[12px] border-gray-300 overflow-hidden mb-6 lg:mb-0 lg:absolute lg:left-52 lg:top-28">
+  <img src={girlImage} alt="Girl Exploring" className="object-cover w-full h-full" />
+</div>
 
-      <button
-        onClick={handleNext}
-        className="absolute z-40 right-4 top-1/2 transform -translate-y-1/2 bg-transparent text-white text-3xl px-3 py-1 rounded-full hover:bg-black/70"
-      >
-        &#8250;
-      </button>
 
-      <div className="relative w-full h-full">
-        {stateVideos.map((item, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === activeIndex ? 'opacity-100 z-20' : 'opacity-0 z-10'
-            } group`}
-          >
-            <video
-              ref={(el) => (videoRefs.current[index] = el)}
-              src={item.src}
-              muted
-              className="w-full h-full object-cover"
-              controls={false}
-            />
+        {/* Text Content */}
+        <div className="w-[90%] sm:w-[80%] lg:w-[500px] text-center lg:text-left lg:absolute lg:top-24 lg:right-30 lg:ml-auto">
+  <h2 className="text-2xl sm:text-3xl font-light">Get there!</h2>
+  <h1 className="text-4xl sm:text-6xl font-bold text-orange-400">EXPLORE</h1>
+  <h2 className="text-2xl sm:text-3xl font-light">THE WORLD</h2>
 
-            <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-10 z-30">
-              <p className="text-md md:text-lg font-medium mb-2 drop-shadow-lg">
-                Make Your Hassle-free Travel Plan Now!
-              </p>
-              <h2 className="text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-xl">
-                <span className="text-white">It's Time To </span>
-                <span className="text-yellow-400">
-                  {headingLines[headingIndex].split(' ')[3]}
-                </span>
-                <span className="text-white"> India</span>
-              </h2>
-              <p className="text-md md:text-lg mt-4 font-medium drop-shadow-lg">
-                Start Your Next Adventure Today: Find Your Perfect Trip Now
-              </p>
+  <p className="mt-4 text-sm sm:text-lg text-black-700">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
 
-              <button
-                onClick={() => {
-                  const currentVideo = videoRefs.current[index];
-                  if (isPaused) {
-                    currentVideo?.play();
-                    setIsPaused(false);
-                  } else {
-                    currentVideo?.pause();
-                    setIsPaused(true);
-                  }
-                }}
-                className="mt-6 bg-white/20 text-white font-semibold py-2 px-6 rounded hover:bg-white/40 transition duration-300 backdrop-blur-sm shadow-md"
-              >
-                PAUSE
-              </button>
-            </div>
+  {/* Book Now Button */}
+  <button className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition">
+    BOOK NOW ✈️
+  </button>
+</div>
 
-            <div className="absolute bottom-4 left-0 right-0 text-white text-xl font-bold bg-black/50 py-2 text-center">
-              {item.name}
-            </div>
-          </div>
-        ))}
       </div>
+
+      {/* Planes (unchanged) */}
+      <div className="absolute top-8 right-1/2 transform translate-x-1/2 text-white text-2xl">✈️</div>
+      <div className="absolute bottom-20 right-10 text-black text-2xl">✈️</div>
     </div>
   );
 };
 
 export default TravelBanner;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
