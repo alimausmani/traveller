@@ -17,6 +17,7 @@ const TravelBanner = () => {
     "It's Time To Experience India",
     "It's Time To Discover India",
   ];
+  
   useEffect(() => {
     if (!isPaused) {
       videoIntervalRef.current = setInterval(() => {
