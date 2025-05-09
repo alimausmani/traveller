@@ -32,7 +32,7 @@ const TravelBanner = () => {
   </p>
 
   {/* Book Now Button */}
-  <button className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition">
+  <button className="mt-6 px-6 py-3 bg-[#FF8C00] text-white font-semibold rounded-full hover:bg-blue-700 transition">
     BOOK NOW ✈️
   </button>
 </div>

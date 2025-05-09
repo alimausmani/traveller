@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Plan = () => {
   useEffect(() => {
-    // GSAP Animations
     gsap.to("#Crow", {
       x: 100,
       y: -50,
@@ -23,16 +22,12 @@ const Plan = () => {
 
     gsap.fromTo(
       "#About-img",
-      {
-        opacity: 0,
-        x: -50,
-      },
+      { opacity: 0, x: -50 },
       {
         opacity: 1,
         x: 0,
         delay: 1.3,
         duration: 1.5,
-
         scrollTrigger: {
           trigger: "#About",
           start: "top center",
@@ -42,16 +37,12 @@ const Plan = () => {
 
     gsap.fromTo(
       "#discount",
-      {
-        opacity: 0,
-        y: 0,
-      },
+      { opacity: 0, y: 0 },
       {
         duration: 1.3,
         opacity: 1,
         y: 100,
         ease: "bounce",
-
         scrollTrigger: {
           trigger: "#About",
           start: "top center",
@@ -67,8 +58,7 @@ const Plan = () => {
         y: 0,
         duration: 1.5,
         delay: 1.3,
-        stagger: .2,
-
+        stagger: 0.2,
         scrollTrigger: {
           trigger: "#About",
           start: "top center",
@@ -78,16 +68,12 @@ const Plan = () => {
 
     gsap.fromTo(
       "#booking-section",
-      {
-        opacity: 0,
-        y: -50,
-      },
+      { opacity: 0, y: -50 },
       {
         opacity: 1,
         y: 0,
         delay: 1.3,
         duration: 1.5,
-
         scrollTrigger: {
           trigger: "#About",
           start: "top center",
@@ -138,7 +124,7 @@ const Plan = () => {
             className="absolute flex flex-col items-start -space-y-2 z-10 right-0 top-20 lg:right-10 lg:top-24"
             id="discount"
           >
-            <h2 className="font-reey text-[50px] sm:text-[70px] text-[#0000ff]">
+            <h2 className="font-reey text-[50px] sm:text-[70px] text-[#FF8C00]">
               30%
             </h2>
             <p className="font-sans text-[30px] sm:text-[40px] text-[#313041] font-medium">
@@ -152,7 +138,7 @@ const Plan = () => {
           className="flex items-center gap-4 bg-white px-5 py-4 rounded-lg absolute z-10 bottom-[-20px] lg:bottom-48 lg:left-2 border border-[#e0e0e0] shadow-sm cursor-pointer"
           id="booking-section"
         >
-          <FaPhoneVolume className="text-[#0000ff] text-[20px]" />
+          <FaPhoneVolume className="text-[#FF8C00] text-[20px]" />
           <div className="flex flex-col">
             <p className="font-sans text-[10px] text-[#787780] font-medium tracking-wide">
               BOOK TOUR NOW
@@ -171,7 +157,7 @@ const Plan = () => {
           className="absolute hidden lg:block -z-10 right-8 top-[-40px] animate-bounce-slow"
           alt="Decorative Stripe"
         />
-        <h2 className="font-reey text-[20px] text-[#0000ff] Heading">
+        <h2 className="font-reey text-[20px] text-[#FF8C00] Heading">
           Get to know us
         </h2>
         <h1
@@ -189,19 +175,19 @@ const Plan = () => {
         {/* Features Section */}
         <div className="flex flex-col gap-4 mt-6" id="Features">
           <div className="flex gap-3 items-center">
-            <RiCheckboxCircleFill className="text-[#0000ff] text-[20px]" />
+            <RiCheckboxCircleFill className="text-[#FF8C00] text-[20px]" />
             <p className="text-[16px] sm:text-[18px] text-[#313041] font-sans">
               Invest in your simply neighborhood
             </p>
           </div>
           <div className="flex gap-3 items-center">
-            <RiCheckboxCircleFill className="text-[#0000ff] text-[20px]" />
+            <RiCheckboxCircleFill className="text-[#FF8C00] text-[20px]" />
             <p className="text-[16px] sm:text-[18px] text-[#313041] font-sans">
               Support people in free text extreme need
             </p>
           </div>
           <div className="flex gap-3 items-center">
-            <RiCheckboxCircleFill className="text-[#0000ff] text-[20px]" />
+            <RiCheckboxCircleFill className="text-[#FF8C00] text-[20px]" />
             <p className="text-[16px] sm:text-[18px] text-[#313041] font-sans">
               Largest global industrial business community
             </p>
@@ -211,7 +197,7 @@ const Plan = () => {
         {/* Book Now Button */}
         <div className="flex justify-start mt-10" id="book-button">
           <button
-            className="relative inline-block px-6 py-4 bg-[#0000ff] text-white font-semibold text-[12px] sm:text-[14px] hover:bg-blue-600 rounded-lg tracking-widest overflow-hidden group"
+            className="relative inline-block px-6 py-4 bg-[#FF8C00] text-white font-semibold text-[12px] sm:text-[14px] hover:bg-blue-600 rounded-lg tracking-widest overflow-hidden group"
             style={{ wordSpacing: "0.1rem" }}
           >
             <span className="absolute inset-0 bg-[#313041] transform scale-y-0 transition-transform duration-700 ease-in-out group-hover:scale-y-100 origin-bottom"></span>
