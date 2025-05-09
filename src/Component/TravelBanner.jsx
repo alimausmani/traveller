@@ -46,4 +46,6 @@ const TravelBanner = () => {
   );
 };
 
+
 export default TravelBanner;
+
