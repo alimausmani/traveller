@@ -17,7 +17,7 @@ const VideoCode = () => {
     "It's Time To Experience India",
     "It's Time To Discover India",
   ];
-  
+
   useEffect(() => {
     if (!isPaused) {
       videoIntervalRef.current = setInterval(() => {
@@ -84,6 +84,7 @@ const VideoCode = () => {
               ref={(el) => (videoRefs.current[index] = el)}
               src={item.src}
               muted
+              loop 
               className="w-full h-full object-cover"
               controls={false}
             />
