@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaInstagram, FaLinkedin,  FaFacebo
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-10 px-5 rounded-t-3xl">
+        <footer className="bg-[#005A53] text-white py-10 px-5 rounded-t-3xl">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
                 <div>
                     <h3 className="font-bold text-lg mb-4">CONTACT Us</h3>

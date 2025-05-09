@@ -117,9 +117,13 @@ const HomePage = () => {
               {/* View Details Button - show on hover */}
               {hoveredCard === destination.id && (
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm px-4 py-2 rounded shadow-lg transition-all duration-300">
+                  {/* <button className="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm px-4 py-2 rounded shadow-lg transition-all duration-300">
                     View Details
-                  </button>
+                  </button> */}
+                  <button className="bg-[#FF8C00] hover:bg-orange-700 text-white text-xs sm:text-sm px-4 py-2 rounded shadow-lg transition-all duration-300">
+  View Details
+</button>
+
                 </div>
               )}
             </div>
@@ -128,12 +132,19 @@ const HomePage = () => {
 
         {/* Browse All Button */}
         <div className="flex justify-center mt-8">
-          <button className="flex items-center bg-teal-500 hover:bg-teal-600 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base transition-all duration-300">
+          {/* <button className="flex items-center bg-teal-500 hover:bg-teal-600 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base transition-all duration-300">
             <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M3 12h18M12 3v18" />
             </svg>
             Browse all Destinations
-          </button>
+          </button> */}
+          <button className="flex items-center bg-[#FF8C00] hover:bg-orange-700 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base transition-all duration-300">
+  <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M3 12h18M12 3v18" />
+  </svg>
+  Browse all Destinations
+</button>
+
         </div>
       </div>
 
