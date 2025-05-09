@@ -56,8 +56,9 @@ const VideoCode = () => {
   };
 
   return (
-    <div className="relative max-w-6xl mx-auto mt-10 rounded-2xl overflow-hidden shadow-xl border border-gray-300 h-[500px]">
-
+    <div className="relative max-w-6xl mx-auto mt-10 rounded-2xl overflow-hidden shadow-xl border border-gray-300"
+         style={{ height: '80vw', maxHeight: '500px' }} 
+    >
       <button
         onClick={handlePrev}
         className="absolute z-40 left-4 top-1/2 transform -translate-y-1/2 bg-transparent text-white text-3xl px-3 py-1 rounded-full hover:bg-black/70"
@@ -84,8 +85,10 @@ const VideoCode = () => {
               ref={(el) => (videoRefs.current[index] = el)}
               src={item.src}
               muted
-              loop 
-              className="w-full h-full object-cover"
+              loop
+              className="w-full h-full object-cover 
+                scale-100 sm:scale-105 md:scale-110 lg:scale-120 
+                transition-transform duration-500 ease-in-out"
               controls={false}
             />
 
@@ -117,7 +120,7 @@ const VideoCode = () => {
                 }}
                 className="mt-6 bg-white/20 text-white font-semibold py-2 px-6 rounded hover:bg-white/40 transition duration-300 backdrop-blur-sm shadow-md"
               >
-                PAUSE
+                {isPaused ? 'PLAY' : 'PAUSE'}
               </button>
             </div>
 
@@ -132,3 +135,6 @@ const VideoCode = () => {
 };
 
 export default VideoCode;
+
+
+
