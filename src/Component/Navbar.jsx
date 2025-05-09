@@ -6,6 +6,32 @@ const Navbar = () => {
 
     return (
         <nav>
+
+            {/*bg-gradient-to-br from-yellow-400 via-amber-500 to-yellow-600          005A53 final color[##FFC300][#FFD700] #FF8E53Top bar with Deep Blue background and Sun Orange text #FFB347*/}
+            <div className="bg-[#f9bb1d] text-black text-sm py-2">
+                <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
+
+                    <div className="flex items-center gap-4 text-xs md:text-sm text-white">
+                        <span>📞 +91-120-4222623/24/25</span>
+                        <span>📧 info@specialholidays.net</span>
+                    </div>
+
+                    <div className="hidden md:block text-center font-semibold text-xs text-white">
+                        National Tourism Awardee - Tour Operator & Travel Agent
+                    </div>
+                    <div className="flex items-center gap-4">
+                        <img
+                            src="https://flagcdn.com/w40/in.png"
+                            alt="Indian Flag"
+                            className="w-7 h-7"
+                        />
+                        <button className="bg-[#FF8C00] text-[#FFF5CC] px-3 py-1 rounded text-xs md:text-sm border border-[#FFA500]">
+                            REGISTER
+                        </button>
+                        <button className="bg-[#FF8C00] text-white flex items-center gap-1 text-xs md:text-sm px-3 py-1 rounded">
+                            <span>👤</span> LOGIN
+                        </button>
+
             {/* Top Strip */}
             <div className="bg-black text-white text-[12px] sm:text-[14px] md:text-sm py-3 px-3">
                 <div className="bg-black text-white text-[8px] sm:text-[10px] md:text-sm py-2 px-2">
@@ -39,19 +65,27 @@ const Navbar = () => {
                                 </button>
                             </Link>
                         </div>
+
                     </div>
                 </div>
             </div>
 
-            {/* Main Navigation */}
-            <div className={`py-3 px-2 ${menuOpen ? 'bg-white' : 'bg-blue'} shadow`}>
-                <div className="flex justify-between items-center w-full sm:px-4 md:px-24">
-                    {/* Logo */}
-                    <div className={`${menuOpen ? 'hidden' : 'block'} sm:block`}>
-                        <h1 className="text-xl sm:text-2xl font-bold text-blue-800 flex items-center gap-2">
-                            TREVILY
-                        </h1>
+
+            {/* Navbar with Sun Orange background and Deep Blue text */}
+            <div className="bg-white  shadow">
+                <div className="max-w-7xl mx-auto flex flex-wrap md:flex-nowrap items-center justify-between px-4 py-3">
+
+                    <div className="flex items-center mb-2 md:mb-0">
+                        <div className="w-[6ch] md:w-[10ch]"></div>
+                        <img
+                            src="https://www.specialholidays.com/world/uploads/global/logo.png"
+                            alt="Logo"
+                            className="h-12 mr-4"
+                        />
                     </div>
+                    <ul className="flex flex-wrap gap-6 text-sm font-semibold justify-center md:justify-start text-black">
+                        <li className="w-[6ch] md:w-[10ch]"></li>
+
 
                     {/* Hamburger Button */}
                     <button

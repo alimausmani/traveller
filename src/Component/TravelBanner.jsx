@@ -28,6 +28,7 @@ const TravelBanner = () => {
 
         {/* Text Content */}
         <div className="w-[90%] sm:w-[80%] lg:w-[500px] text-center lg:text-left lg:absolute lg:top-24 lg:right-30 lg:ml-auto">
+
           <h2 className="text-2xl sm:text-3xl font-light">Get there!</h2>
           <h1 className="text-4xl sm:text-6xl font-bold text-orange-400">EXPLORE</h1>
           <h2 className="text-2xl sm:text-3xl font-light">THE WORLD</h2>
@@ -40,6 +41,7 @@ const TravelBanner = () => {
             BOOK NOW ✈️
           </button>
         </div>
+
       </div>
 
       {/* Plane icons */}
