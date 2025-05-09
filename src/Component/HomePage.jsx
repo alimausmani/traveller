@@ -1,7 +1,7 @@
 
 import VideoCode from "./videoCode";
 
-import TravelBanner from './TravelBanner';
+// import TravelBanner from './TravelBanner';
 import Plan from "./Plan";
 import { MapPin } from "lucide-react";
 import { useState } from "react";
@@ -70,7 +70,7 @@ const HomePage = () => {
 
       <VideoCode/>
 
-      <TravelBanner />
+      {/* <TravelBanner /> */}
       <Plan />
 
       <div className="w-full min-h-screen bg-white px-4 py-8 sm:px-6 md:px-8 lg:px-16">
