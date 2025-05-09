@@ -56,7 +56,7 @@ const TravelBanner = () => {
   };
 
   return (
-    <div className="relative w-full max-w-full h-[75vh] sm:h-[80vh] md:h-[85vh] lg:h-[90vh] xl:h-[95vh] mx-auto mt-0  overflow-hidden shadow-xl border border-gray-300">
+    <div className="relative w-full max-w-full h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-[70vh] xl:h-[75vh] mx-auto mt-0 overflow-hidden shadow-xl border border-gray-300">
       <button
         onClick={handlePrev}
         className="absolute z-40 left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-transparent text-white text-2xl sm:text-3xl px-2 sm:px-3 py-1 rounded-full hover:bg-black/70"
@@ -83,6 +83,7 @@ const TravelBanner = () => {
               ref={(el) => (videoRefs.current[index] = el)}
               src={item.src}
               muted
+              loop
               className="w-full h-full object-cover"
               controls={false}
             />
@@ -130,7 +131,3 @@ const TravelBanner = () => {
 };
 
 export default TravelBanner;
-
-
-
-
