@@ -5,6 +5,9 @@ import Plan from "./Plan";
 import { MapPin } from "lucide-react";
 import Testimonials from './Testimonials';
 
+import SpecialTours from './SpecialTours';
+import TourDetails from './TourDetails';
+
 const HomePage = () => {
   const navigate = useNavigate();
   const destinations = [
@@ -22,6 +25,12 @@ const HomePage = () => {
 
   return (
     <>
+
+      <VideoCode/>
+
+    <SpecialTours/>
+    <TourDetails/>
+      {/* <TravelBanner /> */}
       <VideoCode />
       <Plan />
 
