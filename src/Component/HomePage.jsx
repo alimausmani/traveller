@@ -12,6 +12,7 @@ import TourDetails from './TourDetails';
 
 
 
+>>>>>>>>> Temporary merge branch 2
 
 const HomePage = () => {
   const navigate = useNavigate();
