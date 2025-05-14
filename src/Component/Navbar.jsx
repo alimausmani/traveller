@@ -40,9 +40,10 @@ const Navbar = () => {
                     <div className="flex items-center mb-2 md:mb-0">
                         <div className="w-[6ch] md:w-[10ch]"></div>
                         <img
-                            src="https://www.specialholidays.com/world/uploads/global/logo.png"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNsyprO04hNVaCBvXSz1Bbqbd1loaXWmwtpQ&s"
                             alt="Logo"
                             className="h-12 mr-4"
+
                         />
                     </div>
 
