@@ -9,7 +9,7 @@ const tourData = [
   {
     title: "Delhi Tours",
     description: "📍 Capital - City of Monuments",
-    image: "https://www.specialholidays.com/new_img/delhi.jpg"
+    image: "https://cdn.pixabay.com/photo/2017/03/19/08/01/qutub-minar-2155776_1280.jpg"
   },
   {
     title: "Golden Triangle",
@@ -213,7 +213,7 @@ const IndiaTours = () => {
               <img
                 src={tour.image}
                 alt={tour.title}
-                className="w-full h-100 object-cover"
+                className="w-full h-80 object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <button className="bg-[#FF8C00] hover:bg-orange-700 text-white text-xs sm:text-sm px-4 py-2 rounded shadow-lg transition-all duration-300">
@@ -233,7 +233,6 @@ const IndiaTours = () => {
     </section>
   );
 };
-
 export default IndiaTours;
 
 

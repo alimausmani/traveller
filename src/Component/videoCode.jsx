@@ -8,7 +8,7 @@ const TravelBanner = () => {
   const videoIntervalRef = useRef(null);
 
   const stateVideos = [
-    { name: 'INDIA', src: '/allOne.mp4' },
+    { name: 'INDIA', src: '/newVideo.mp4' },
   ];
 
   const headingLines = [
