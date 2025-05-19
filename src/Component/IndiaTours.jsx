@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import tourData from './tourData'; 
+// import tourData from './tourData'; 
+
 
 const tourData = [
   {
