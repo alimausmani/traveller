@@ -6,13 +6,9 @@ import VideoCode from "./videoCode";
 import Plan from "./Plan";
 import { MapPin } from "lucide-react";
 import Testimonials from './Testimonials';
-import React from 'react';
 import SpecialTours from './SpecialTours';
 import TourDetails from './TourDetails';
 
-
-
->>>>>>>>> Temporary merge branch 2
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -37,7 +33,6 @@ const HomePage = () => {
     <SpecialTours/>
     <TourDetails/>
       {/* <TravelBanner /> */}
-      <VideoCode />
       <Plan />
 
       <div className="w-full min-h-screen bg-white px-4 py-8 sm:px-6 md:px-8 lg:px-16">
