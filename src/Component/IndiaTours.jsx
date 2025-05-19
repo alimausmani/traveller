@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import tourData from './tourData'; 
 
 const tourData = [
   {
@@ -184,6 +186,8 @@ const tourData = [
 ];
 
 const IndiaTours = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-12 px-4 bg-gray-100">
       <h2 className="text-3xl font-bold mb-8 text-gray-800 text-center">
@@ -194,20 +198,7 @@ const IndiaTours = () => {
         {tourData.map((tour, index) => (
           <div
             key={index}
-            className="
-              w-full
-              sm:w-[47%]
-              md:w-[30%]
-              lg:w-[22%]
-              bg-white 
-              shadow-md 
-              rounded-lg 
-              overflow-hidden 
-              hover:scale-105 
-              transition-transform 
-              duration-300
-              group
-            "
+            className="w-full sm:w-[47%] md:w-[30%] lg:w-[22%] bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 group"
           >
             <div className="relative">
               <img
@@ -216,7 +207,10 @@ const IndiaTours = () => {
                 className="w-full h-80 object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="bg-[#FF8C00] hover:bg-orange-700 text-white text-xs sm:text-sm px-4 py-2 rounded shadow-lg transition-all duration-300">
+                <button
+                  className="bg-[#FF8C00] hover:bg-orange-700 text-white text-xs sm:text-sm px-4 py-2 rounded shadow-lg transition-all duration-300"
+                  onClick={() => navigate(`/details/${encodeURIComponent(tour.title.split(' ')[0])}`)}
+                >
                   View Details
                 </button>
               </div>
@@ -234,5 +228,3 @@ const IndiaTours = () => {
   );
 };
 export default IndiaTours;
-
-

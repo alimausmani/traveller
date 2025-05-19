@@ -11,7 +11,12 @@ import LoginPage from './Component/LoginPage';
 import RegisterPage from './Component/RegisterPage';
 import HomePage from './Component/HomePage'; 
 import IndiaTours from './Component/IndiaTours'; 
+
+import TourDetailPage from './Component/TourDetailPage.jsx';
+
+
 import TourDetails from './Component/TourDetails';
+
 
 const App = () => {
   return (
@@ -27,6 +32,7 @@ const App = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/indiatours" element={<IndiaTours />} /> 
+        <Route path="/details/:place" element={<TourDetailPage />} />
         <Route path="/tour/:id" element={<TourDetails />} />
       </Routes>
       <Footer />
