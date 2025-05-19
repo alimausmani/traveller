@@ -1,5 +1,3 @@
-// tourData.js
-
 const tourData = [
     {
       title: "North India Tours",
