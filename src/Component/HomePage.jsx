@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import VideoCode from "./videoCode";
+
+// import TravelBanner from './TravelBanner';
 import Plan from "./Plan";
 import { MapPin } from "lucide-react";
 import Testimonials from './Testimonials';
-
 import SpecialTours from './SpecialTours';
 import TourDetails from './TourDetails';
+
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -31,7 +33,6 @@ const HomePage = () => {
     <SpecialTours/>
     <TourDetails/>
       {/* <TravelBanner /> */}
-      <VideoCode />
       <Plan />
 
       <div className="w-full min-h-screen bg-white px-4 py-8 sm:px-6 md:px-8 lg:px-16">
