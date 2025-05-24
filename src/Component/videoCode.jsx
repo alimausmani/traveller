@@ -56,20 +56,20 @@ const TravelBanner = () => {
   };
 
   return (
-    <div className="relative w-full max-w-full h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-[70vh] xl:h-[75vh] mx-auto mt-0 overflow-hidden shadow-xl border border-gray-300">
-      <button
+    <div className="relative w-full max-w-full h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-[70vh] xl:h-[75vh] mx-auto mt-0 overflow-hidden shadow-xl border border-gray-300 ">
+      {/* <button
         onClick={handlePrev}
         className="absolute z-40 left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-transparent text-white text-2xl sm:text-3xl px-2 sm:px-3 py-1 rounded-full hover:bg-black/70"
       >
         &#8249;
-      </button>
+      </button> */}
 
-      <button
+      {/* <button
         onClick={handleNext}
         className="absolute z-40 right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-transparent text-white text-2xl sm:text-3xl px-2 sm:px-3 py-1 rounded-full hover:bg-black/70"
       >
         &#8250;
-      </button>
+      </button> */}
 
       <div className="relative w-full h-full">
         {stateVideos.map((item, index) => (
@@ -84,7 +84,7 @@ const TravelBanner = () => {
               src={item.src}
               muted
               loop
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
               controls={false}
             />
 
@@ -120,9 +120,9 @@ const TravelBanner = () => {
               </button>
             </div>
 
-            <div className="absolute bottom-2 sm:bottom-4 left-0 right-0 text-white text-base sm:text-lg md:text-xl font-bold bg-black/50 py-1 sm:py-2 text-center">
+            {/* <div className="absolute bottom-2 sm:bottom-4 left-0 right-0 text-white text-base sm:text-lg md:text-xl font-bold bg-black/50 py-1 sm:py-2 text-center">
               {item.name}
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

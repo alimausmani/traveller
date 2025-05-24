@@ -42,7 +42,7 @@ const Navbar = () => {
                         <img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNsyprO04hNVaCBvXSz1Bbqbd1loaXWmwtpQ&s"
                             alt="Logo"
-                            className="h-12 mr-4"
+                            className="h-18 mr-4 w-20"
 
                         />
                     </div>
